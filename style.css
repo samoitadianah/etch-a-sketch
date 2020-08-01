@@ -1,0 +1,84 @@
+* {
+    font-family: 'Roboto';
+  }
+  
+  #controls {
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .control {
+    background-color: black;
+    color: #d8d8d8;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  #erase, #blackBtn{
+    color: white;
+    background-color: black;
+  }
+  #colorful {
+    color: white;
+    background-color: green;
+  }
+  
+  #container {
+    display: grid;
+    position: absolute;
+    width:480px;
+    height: 480px;
+    max-width: 900px;
+    max-height: 900px;
+    box-sizing: border-box;
+    border: 5px solid #7a7a7a; 
+    text-align: center; 
+    padding: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  
+  .gridCell {
+    border: 1px solid #d8d8d8;
+  }
+  
+  .colorful {
+    border: 1px solid white;
+  
+  }
+ 
+  #shades {
+    color: whitesmoke;
+    background-image: linear-gradient(to right, #7a7a7a, #707070, #666666, #5c5c5c, #525252, #474747, #3d3d3d, #333333, #292929, #1f1f1f, #141414, #0a0a0a, #000000);
+  }
+  
+  button:focus {
+    border: 2px solid blue;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  @media only screen and (max-width: 380px) {
+    #container {
+      height: 320px;
+      width: 320px;
+      transform: scale(0.9);
+    }
+    #controls {
+      transform: scale(0.8);
+      display: flex;
+      flex-direction: row;
+      align-content: space-between;
+      margin-left: -20px;
+    }
+    .control {
+      font-size: 16px;
+      margin: 10px;
+    }
+  }
